@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* Root Variables */
+:root {
+    --header-height: 80px;
+}
+
+/* General Styles */
+html {
+    font-family: "Montserrat", "Lato", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    height: var(--header-height);
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.logo-nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 5em;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav.horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+nav.horizontal ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.horizontal li {
+    margin: 0 15px;
+}
+
+nav.horizontal a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav.horizontal a:visited,
+nav.horizontal a:link {
+    color: #0780a1;
+}
+
+nav.horizontal a:hover,
+nav.horizontal a:active {
+    background-color: #196afa;
+    color: white;
+}
+
+a#navicon {
+    display: none;
+}
+
+/* Headings & Paragraphs */
+main {
+    padding-top: calc(var(--header-height) + 40px);
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 10px 0;
+    padding: 5px 0;
+    color: #fa7a19;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #0780a1;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.feature-image {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Program Info */
+.program-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(to bottom, white 0%, #e0e0e0 100%);
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #0780a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FF4500;
+}
+
+/* Contact Section */
+#contact {
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+}
+
+/* Focus Styles */
+a:focus {
+    outline: 2px solid #196afa;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav.horizontal {
+        flex-direction: column;
+    }
+
+    nav.horizontal ul {
+        display: none;
+    }
+
+    .feature-image {
+        max-width: 100%;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    /* This placeholder rule does not provide true toggle functionality */
+    a#navicon:hover + ul, header nav ul:hover {
+        display: block;
+    }
+}
+

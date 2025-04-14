@@ -1,0 +1,101 @@
+/* Get Involved Page Styling */
+.reachout-section h1 {
+    color: #fa7a19;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.field {
+    flex: 1 1 100%;
+}
+
+.field.half {
+    flex: 1 1 48%;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.actions.special {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.actions.special input[type="submit"] {
+    background-color: #0780a1;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions.special input[type="submit"]:hover {
+    background-color: #055b75;
+}
+
+
+@media (max-width: 768px) {
+    .form-wrapper  {
+        padding: 0 10px;
+    }
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+    .form-wrapper {
+        padding: 1em; 
+    }
+
+    .reachout-section h1 {
+        font-size: 2em; 
+        padding: 10px; 
+    }
+
+    .fields {
+        flex-direction: column; 
+        gap: 0.5em; 
+    }
+
+    .field.half {
+        flex: 1 1 100%; 
+    }
+
+    .actions.special input[type="submit"] {
+        padding: 0.6em 1.2em; 
+    }
+}
