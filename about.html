@@ -12,6 +12,7 @@
     <!--CSS Styles-->
     <link rel="stylesheet" href="css/layout.css" type="text/css">
     <link rel="stylesheet" href="css/about.css" type="text/css">
+    <script src="scripts/video.js"></script>
     <!--Title-->
     <title>About Us| Bridge Over Troubled Water</title>
 </head>
@@ -40,15 +41,19 @@
     <!-- MAIN CONTENT -->
     <main>
         <section class="org-section">
-            <!-- <div class="org-wrapper"> -->
-                <img src="images/us.jpeg" 
-                    alt="An African American woman proudly leads a diverse team." 
-                    class="feature-image">
-                <div class="team-info">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <video id="aboutVideo" autoplay muted playinline poster="images/us.jpeg">
+                        <source src="media/collaborate.mp4" type ="video/mp4">
+                        Your browser does not support this video.
+                    </video>
                 </div>
             </div>
+                    <div class="team-info">
+                        <h1>About Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+            
         </section>
     </main>
 
