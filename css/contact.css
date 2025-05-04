@@ -1,4 +1,5 @@
 /* Get Involved Page Styling */
+@charset "UTF-8";
 .reachout-section h1 {
     color: #fa7a19;
     font-size: 2.5em;
@@ -69,11 +70,6 @@
 }
 
 
-@media (max-width: 768px) {
-    .form-wrapper  {
-        padding: 0 10px;
-    }
-}
 
 /* Responsive media query for smaller screens */
 @media (max-width: 768px) {

@@ -123,16 +123,19 @@ p {
 /* Hero Section */
 .hero-section {
     background-color: #0780a1;
-    padding: 20px 10px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .feature-image {
     display: block;
-    max-width: 75%;
+    width: 100%;
+    max-width: 60%;
     height: auto;
     margin: 0 auto;
+    border-radius: 8px;
 }
+
 
 /* Program Info */
 .program-info {
@@ -142,6 +145,7 @@ p {
     text-align: center;
     background: linear-gradient(to bottom, white 0%, #e0e0e0 100%);
     padding: 20px;
+    border-radius: 8px;
 }
 
 /* Footer */

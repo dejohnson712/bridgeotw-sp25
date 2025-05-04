@@ -1,6 +1,6 @@
-/* About Page Styling */
+/*Partner Styling Page*/
 @charset "UTF-8";
-.org-section {
+.partner-section {
     background-color: #0780a1;
     padding: 40px 20px;
     text-align: center;
@@ -9,9 +9,9 @@
 
 .feature-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 90%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     margin-bottom: 20px;
 }
@@ -23,7 +23,7 @@ img {
 }
 
 
-.team-info {
+.internship-info {
     flex: 1 1 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -33,13 +33,13 @@ img {
     border-radius: 8px;
 }
 
-.team-info h1 {
+.internship-info h1 {
     color: black;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.team-info p {
+.internship-info p {
     font-size: 1.2em;
     line-height: 1.6em;
     font-weight: 400;
@@ -81,4 +81,3 @@ footer {
         display: block;
     }
 }
-
