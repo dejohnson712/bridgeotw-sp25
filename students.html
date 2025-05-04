@@ -9,11 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <!--CSS Styles-->
     <link rel="stylesheet" href="css/layout.css" type="text/css">
-    <link rel="stylesheet" href="css/about.css" type="text/css">
-    <!--Title-->
-    <title>About Us| Bridge Over Troubled Water</title>
+    <link rel="stylesheet" href="css/student.css" type="text/css">
+    <script src="scripts/search.js"></script>
+    <title>Student Training Opportunities | Bridge Over Troubled Water</title>
 </head>
 <body>
 
@@ -39,30 +38,35 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <section class="org-section">
-            <!-- <div class="org-wrapper"> -->
-                <img src="images/us.jpeg" 
-                    alt="An African American woman proudly leads a diverse team." 
-                    class="feature-image">
-                <div class="team-info">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section class="future-section">
+            <img src="images/photography.jpg" 
+            alt="A student learns how to capture moments with a camera." 
+                class="feature-image">
+
+                <div class="training-info">
+                       <div class="search-header">
+                            <h1>Explore Training Available</h1>
+                            <form id="searchForm">
+                                <input type="text" id="jobCategory" name="jobCategory" placeholder="Example: IT or Healthcare" required />
+                                <button type="submit">Search</button>
+                            </form>
+                       </div>
+                    <div id="results"></div>       
                 </div>
-            </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Bridge Over Troubled Water. All rights reserved.</p>
-        <ul class="social-links">
-            <li><a href="https://twitter.com/BridgeOTW" 
-                    target="_blank">Twitter</a></li>
-            <li><a href="https://facebook.com/BridgeOTW" 
-                    target="_blank">Facebook</a></li>
-            <li><a href="https://linkedin.com/company/BridgeOTW" 
-                    target="_blank">LinkedIn</a></li>
-        </ul>
-    </footer>
-</body>
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Bridge Over Troubled Water. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://twitter.com/BridgeOTW" 
+                        target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com/BridgeOTW" 
+                        target="_blank">Facebook</a></li>
+                <li><a href="https://linkedin.com/company/BridgeOTW" 
+                        target="_blank">LinkedIn</a></li>
+            </ul>
+        </footer>
+
 </html>
